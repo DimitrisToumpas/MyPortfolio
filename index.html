@@ -53,6 +53,18 @@ a,button{cursor:none}
 #cursor.hover{width:6px;height:6px}
 #cursor-ring.hover{width:50px;height:50px;border-color:rgba(209,208,208,0.7)}
 
+  /* MOBILE / TOUCH DEVICES */
+@media (hover: none), (pointer: coarse) {
+  #cursor,
+  #cursor-ring {
+    display:none !important;
+  }
+
+  body {
+    cursor:auto;
+  }
+}
+
 /* LOADING SCREEN */
 #loader{
   position:fixed;inset:0;background:#000;z-index:9997;
@@ -412,7 +424,7 @@ section.visible{opacity:1;transform:translateY(0)}
 .edu-school{font-size:14px;color:var(--text-secondary);margin-bottom:16px}
 .edu-desc{font-size:14px;color:var(--text-secondary);line-height:1.65}
 
-/* ===== HOBBIES ===== */
+/* ===== HOBBIES ===== 
 .hobbies-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
@@ -431,7 +443,9 @@ section.visible{opacity:1;transform:translateY(0)}
 .hobby-icon{font-size:32px;margin-bottom:14px;display:block;transition:transform 0.3s}
 .hobby-card:hover .hobby-icon{transform:rotate(8deg) scale(1.1)}
 .hobby-name{font-size:13px;font-weight:500;color:var(--text-primary);letter-spacing:0.05em}
+*/
 
+  
 /* ===== TECH MARQUEE ===== */
 #tech{padding:80px 0;overflow:hidden}
 #tech .section-label{padding:0 8%}
@@ -902,8 +916,8 @@ footer{
   <div class="edu-grid">
     <div class="edu-card">
       <div class="edu-year">2020 — Present</div>
-      <div class="edu-degree">Computer Science</div>
-      <div class="edu-school">Aristotle University of Thessaloniki</div>
+      <div class="edu-degree">Information and Electronic Engineering</div>
+      <div class="edu-school">International Hellenic University</div>
       <p class="edu-desc">Studying computer science with a focus on software engineering, algorithms, and modern application development.</p>
     </div>
     <div class="edu-card">
@@ -915,7 +929,7 @@ footer{
   </div>
 </section>
 
-<!-- HOBBIES -->
+<!-- HOBBIES 
 <div class="divider"></div>
 <section id="hobbies">
   <div class="section-label">Beyond code</div>
@@ -930,7 +944,10 @@ footer{
     <div class="hobby-card"><span class="hobby-icon">🎬</span><div class="hobby-name">Movies</div></div>
   </div>
 </section>
+-->
 
+
+  
 <!-- TECH MARQUEE -->
 <div class="divider"></div>
 <section id="tech" style="padding:80px 0;overflow:hidden;opacity:1;transform:none">
